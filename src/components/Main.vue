@@ -82,6 +82,7 @@
     <!-- <p @click="month = !month" class="text-green-900 text-[1.2em]">Number of Years</p> -->
 </div>
 <!-- <div class="space-y-2"> -->
+
     <div v-if="week" class="weeks grid grid-cols-3 gap-[0.5em]">
         <p class="bg-green-700 text-green-300 font-bold text-[1.2em] py-[0.5em] rounded-[10px] flex items-center justify-center cursor-pointer" @click="getWeeks($event)">5 Weeks</p>
         <p class="bg-green-700 text-green-300 font-bold text-[1.2em] py-[0.5em] rounded-[10px] flex items-center justify-center cursor-pointer" @click="getWeeks($event)">10 Weeks</p>
@@ -95,8 +96,10 @@
     </div>
 <!-- </div> -->
 
-
+    
 <!-- <div class="space-y-2"> -->
+
+    <!-- comment from here
     <div v-if="!month" class="weeks grid grid-cols-3 gap-[0.5em]">
         <p class="bg-green-700 text-green-300 font-bold text-[1.2em] py-[0.5em] rounded-[10px] flex items-center justify-center cursor-pointer" @click="getWeeks($event)">5 Weeks</p>
         <p class="bg-green-700 text-green-300 font-bold text-[1.2em] py-[0.5em] rounded-[10px] flex items-center justify-center cursor-pointer" @click="getWeeks($event)">10 Weeks</p>
@@ -107,7 +110,7 @@
         <p class="bg-green-700 text-green-300 font-bold text-[1.2em] py-[0.5em] rounded-[10px] flex items-center justify-center cursor-pointer" @click="getWeeks($event)">40 Weeks</p>
         <p class="bg-green-700 text-green-300 font-bold text-[1.2em] py-[0.5em] rounded-[10px] flex items-center justify-center cursor-pointer" @click="getWeeks($event)">50 Weeks</p>
         <input class="bg-green-300 text-green-700 text-center font-bold text-[1.2em] rounded-[10px] cursor-pointer outline-none" type="text" placeholder="Custom" v-model="weeks" @keyup.enter="getWeeks">
-    </div>
+    </div> -->
 <!-- </div> -->
 
 <div class="space-y-2">
