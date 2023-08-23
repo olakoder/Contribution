@@ -115,7 +115,7 @@
 
     <div class="people  bg-green-200 text-green-900 px-[0.8em] py-[0.8em] flex justify-between rounded-[10px]  font-bold text-[1.2em]">
         <!-- <p>#</p> -->
-        <img class="w-[1.5em]" src="../assets/prof chef.png" alt="">
+        <img class="w-[1.5em]" src="../assets/prof-chef.png" alt="">
         <input class="outline-none bg-green-200 text-right" type="text" placeholder="0" v-model.number="people">
     </div>
 </div>
