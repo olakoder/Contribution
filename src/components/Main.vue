@@ -70,11 +70,20 @@
     <p class="text-green-900 text-[1.2em]">Amount Contributed</p>
 
     <div class="amount bg-green-200 text-green-900 px-[0.8em] py-[0.8em] flex justify-between rounded-[10px]  font-bold text-[1.2em]">
-        <p>#</p>
-        <input class="outline-none bg-green-200 text-right" type="text" placeholder="0" v-model.number="amount">
+        <!-- <p>#</p> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 18V7.052a1.05 1.05 0 0 1 1.968-.51l6.064 10.916a1.05 1.05 0 0 0 1.968-.51V6M5 10h14M5 14h14"/></svg>
+        <input class="outline-none bg-green-200 text-right pr-[8px]" type="text" placeholder="0" v-model.number="amount">
     </div>
 </div>
 
+<div class="space-y-2">
+    <p class="text-green-900 text-[1.2em]">Number of People</p>
+
+    <div class="people  bg-green-200 text-green-900 px-[0.8em] py-[0.8em] flex justify-between rounded-[10px]  font-bold text-[1.2em]">
+        <img class="w-[1.5em]" src="../assets/prof-chef.png" alt="">
+        <input class="outline-none bg-green-200 text-right pr-[8px]" type="text" placeholder="0" v-model.number="people">
+    </div>
+</div>
 
 <div class="week-month-year grid grid-cols-2 md:grid-cols-3">
     <p @click="week = !week" class="text-green-900 text-[1.2em]">Number of Weeks</p>
@@ -113,26 +122,15 @@
     </div> -->
 <!-- </div> -->
 
-<div class="space-y-2">
-    <p class="text-green-900 text-[1.2em]">Number of People</p>
-
-    <div class="people  bg-green-200 text-green-900 px-[0.8em] py-[0.8em] flex justify-between rounded-[10px]  font-bold text-[1.2em]">
-        <!-- <p>#</p> -->
-        <img class="w-[1.5em]" src="../assets/prof-chef.png" alt="">
-        <input class="outline-none bg-green-200 text-right" type="text" placeholder="0" v-model.number="people">
-    </div>
-</div>
-
-
 <div class="result space-y-6 bg-green-900 px-[0.8em] py-[0.8em] text-green-200 font-bold text-[1.2em] rounded-[10px]">
     <div class="each flex justify-between">
         <p>Each Person</p>
-        <p>{{totalOfEach}}</p>
+        <p class="pr-[8px]">{{totalOfEach}}</p>
     </div>
 
     <div class="each  flex justify-between">
         <p>Total</p>
-        <p>{{total}}</p>
+        <p class="pr-[8px]">{{total}}</p>
     </div>
 
     <button class="bg-green-200 text-green-900 w-[100%] rounded-[10px] py-[0.8em]" @click="reset">RESET</button>
