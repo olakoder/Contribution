@@ -78,8 +78,8 @@
 
 <div class="week-month-year grid grid-cols-2 md:grid-cols-3">
     <p @click="week = !week" class="text-green-900 text-[1.2em]">Number of Weeks</p>
-    <p @click="month = !month" class="text-green-900 text-[1.2em]">Number of Months</p>
-    <p @click="month = !month" class="text-green-900 text-[1.2em]">Number of Years</p>
+    <!-- <p @click="month = !month" class="text-green-900 text-[1.2em]">Number of Months</p> -->
+    <!-- <p @click="month = !month" class="text-green-900 text-[1.2em]">Number of Years</p> -->
 </div>
 <!-- <div class="space-y-2"> -->
     <div v-if="week" class="weeks grid grid-cols-3 gap-[0.5em]">
